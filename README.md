@@ -4,12 +4,15 @@ Laravel 9.6 docker, PHP 8.0.17
 ## Follow the steps below.
 1. Sudo docker-compose up in the dir
 2. You may need to attach the shell into php:8.0-apache container to run following command
-  sudo a2enmod rewrite
-3. In browser http://localhost:8000/public/
-4. You may need to give 777 to the storage folder. (optional step)
-5. Phpmyadmin http://localhost:8080/
-6. Username: forge | Database forge | Password: pass1234
-7. .env File Details
+    1. sudo a2enmod rewrite
+3. Run composer install
+4. Run php artisan --version
+5. Run php artisan migrate
+6. In browser http://localhost:8000/public/
+7. You may need to give 777 to the storage folder. (optional step)
+8. Phpmyadmin http://localhost:8080/
+9. Username: forge | Database forge | Password: pass1234
+10. .env File Details
     1. DB_CONNECTION=mysql
     2. DB_HOST=db
     3. DB_PORT=3306
