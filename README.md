@@ -1,5 +1,5 @@
 # About Application 
-This is demo laravel 9 docker application
+Laravel 9.6 docker, PHP 8.0.17
 
 ## Follow the steps below.
 1. Sudo docker-compose up in the dir
